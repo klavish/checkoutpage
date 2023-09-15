@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a product checkout process page">
+    <meta name="keywords" content="Jewellery,gold,decoration,diamond">
+    <meta name="author" content="Jack">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body class="font-jost">
+    <header class="w-full h-20 border flex items-center justify-center py-12 fixed top-0 z-10 bg-slate-50">
+        <nav class="flex gap-24">
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <span class="xs:hidden lg:block text-blue-800 font-bold">Summary</span>
+                <div
+                    class="w-5 h-5 relative bg-white border-2 border-sky-600 rounded-full grid place-items-center after:content-[' '] after:absolute xs:after:w-28 lg:after:w-48 after:h-1 after:-z-10 after:border-b after:border-sky-600 after:left-2 after:top-1">
+                    <div class="w-2 h-2 bg-sky-600 rounded-full absolute"></div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-4 relative">
+                <span class="xs:hidden lg:block text-gray-700 font-medium">Contact Information</span>
+                <div
+                    class="w-5 h-5 relative bg-white border-2 rounded-full grid place-items-center after:content-[' '] after:absolute after:w-60 after:h-1 after:-z-10 after:border-b after:border-dashed after:border-slate-200 after:left-2 after:top-1">
+                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <span class="xs:hidden lg:block text-gray-700 font-medium">Payment Information</span>
+                <div
+                    class="w-5 h-5 relative bg-white border-2  rounded-full grid place-items-center after:content-[' '] after:absolute sm:after:w-28 lg:after:w-48 after:h-1 after:-z-10 after:border-b after:border-dashed after:border-slate-200 after:left-2 after:top-1">
+                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-4 ">
+                <span class="xs:hidden lg:block text-gray-700 font-medium">Review</span>
+                <div class="w-5 h-5 relative bg-white border-2  rounded-full grid place-items-center ">
+                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="w-full mt-28">
+            <form action="#" class="container justify-around mx-auto">
+                <ul>
+                    <!-- first section starts  -->
+                    <li class="flex flex-col container mx-auto lg:border">
+                        <div class="flex flex-col lg:flex-row container mx-auto">
+                            <div class="w-full  lg:w-2/5 px-2 py-2 container ">
+                                <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                                    alt="This is a Jewellery image containing diamond"
+                                    class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <div class="flex-1 container mx-auto px-2">
+                                <header class="w-full pb-4 relative space-y-4 pt-2">
+                                    <div class="flex justify-between items-start gap-4">
+                                        <h2
+                                            class="font-semibold text-base flex justify-between items-center text-gray-700">
+                                            Oval French Cut
+                                            Halo Engagement Set In 14K White Gold With A
+                                            1.00 Ct.
+                                            H-Color VS2-Clarity Emerald Cut Diamond</h2>
+
+                                        <button type="button" aria-label="cross-button" class="flex items-center">
+                                            <svg class="w-6 h-6" version="1.2" baseProfile="tiny"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                                                </path>
+                                            </svg>
+                                            <span class="hidden lg:block text-xs text-gray-600">Remove</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="space-y-2">
+                                        <p class="text-gray-600 font-medium text-sm">Item#RB1077-WG14</p>
+                                        <p class="font-bold text-xl">$1,258.78</p>
+                                    </div>
+
+                                </header>
+
+                                <div class="flex flex-col lg:flex-row gap-16 container sm:space-y-6 lg:space-y-0">
+                                    <div class="flex gap-6">
+                                        <div class="w-full lg:flex-1">
+                                            <label for="ring-size"
+                                                class="font-medium text-sm gap-y-4 text-gray-700">Ring Size</label>
+                                            <select name="size" id="ring-size" class="border w-full py-2">
+                                                <option selected class="font-medium text-sm">Select Size</option>
+                                                <option value="xs">XS</option>
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div class=" ">
+                                            <label for="quantity"
+                                                class="font-medium text-sm gap-y-4 text-gray-700">Quantity</label>
+
+                                            <div class="flex items-center gap-1 border">
+                                                <button class="text-3xl px-1">-</button>
+                                                <input type="number" name="qty" id="quantity" value="1"
+                                                    class=" w-6 h-5 text-xl">
+                                                <button class="text-2xl ">+</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <fieldset class="flex-1">
+                                        <legend class="font-medium text-sm gap-y-4 text-gray-700">Would you like to add
+                                            a center
+                                            Stone?
+                                        </legend>
+                                        <div class="flex gap-8 items-center py-2">
+                                            <div class="flex gap-2">
+                                                <input type="radio" name="radio-button" id="button-1" checked>
+                                                <label for="button-1" class="text-sm">Yes</label>
+                                            </div>
+                                            <div class="flex gap-2">
+                                                <input type="radio" name="radio-button" id="button-2">
+                                                <label for="button-2" class="text-sm">No</label>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+
+
+
+                                </div>
+
+                                <fieldset>
+                                    <div>
+                                        <div class="flex gap-6 items-center pt-4">
+                                            <legend class="font-medium text-gray-700">Select Protection Plans</legend>
+                                            <svg class="w-4 h-4 text-blue-600" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor">
+                                                <path
+                                                    d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <p class="text-xs md:text-sm text-gray-700  pb-4">Enjoy peace of mind with a
+                                            Care Plan from
+                                            Jewellers Mutual.</p>
+                                    </div>
+                                    <div class="flex flex-col max-w-xl lg:flex-row mb-2">
+                                        <div class="flex-1 border">
+                                            <input checked type="radio" name="default-radio" id="radio-1"
+                                                class="hidden peer opacity-0 text-blue-600 w-full bg-white border-gray-500">
+                                            <label for="radio-1"
+                                                class="flex flex-1 cursor-pointer px-4  py-2 w-full gap-4 bg-white items-center justify-center peer-checked:bg-blue-600 peer-checked:text-white text-sm font-medium text-gray-900">
+                                                <span><svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path d="M5 12l5 5l10 -10"></path>
+                                                    </svg></span><span>No Plan</span>
+                                            </label>
+
+                                        </div>
+
+
+                                        <div class="flex-1 border">
+                                            <input type="radio" name="default-radio" id="radio-2"
+                                                class="hidden peer opacity-0 text-blue-600 w-full bg-white border-gray-500">
+                                            <label for="radio-2"
+                                                class="flex flex-1 cursor-pointer px-4 py-2 w-full gap-4 bg-white items-center justify-center  peer-checked:bg-blue-600 peer-checked:text-white text-sm font-medium text-gray-900">
+                                                <span><svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path d="M5 12l5 5l10 -10"></path>
+                                                    </svg></span>
+                                                <span>3Years</span><span>$180.00</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="flex-1 border">
+                                            <input type="radio" name="default-radio" id="radio-3"
+                                                class="hidden peer opacity-0 text-blue-600 w-full bg-white border-gray-500">
+                                            <label for="radio-3"
+                                                class="flex flex-1 cursor-pointer px-4 py-2 w-full gap-4 bg-white items-center justify-center  peer-checked:bg-blue-600 peer-checked:text-white text-sm font-medium text-gray-900">
+                                                <span><svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path d="M5 12l5 5l10 -10"></path>
+                                                    </svg></span>
+                                                <span>Lifetime</span><span>$425.00</span>
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                </fieldset>
+
+
+
+                                <div class="flex flex-row gap-4 items-center mb-2">
+                                    <p class="text-xs font-semibold md:text-sm text-gray-700">Want to add engraving?</p>
+                                    <button type="button" class="">
+                                        <span class="font-bold text-blue-700 text-xl">+</span>
+                                        <span class="text-xs md:text-sm font-medium text-blue-600 ">Add Engraving</span>
+                                        <span class="text-sm md:font-bold text-blue-700">$30.00</span>
+                                    </button>
+                                </div>
+                                <div class="space-y-4 overflow-x-auto">
+                                    <h3 class="font-medium text-sm text-gray-700">Matching Items</h3>
+                                    <ul class="relative  flex flex-nowrap lg:flex flex-row  gap-3">
+                                        <li>
+                                            <svg class="absolute top-8 left-3 lg:top-7 w-8 h-8 "
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor">
+                                                <path fill="currentColor"
+                                                    d="M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M10.7879967,5.64577005 L6.91785319,9.61728273 C6.65804237,9.88389868 6.66011276,10.3096256 6.92250445,10.5737019 L10.792648,14.4686937 C11.0580611,14.735811 11.4897623,14.7371924 11.7568796,14.4717792 C12.0239968,14.2063661 12.0253782,13.7746649 11.7599651,13.5075477 L8.36270656,10.088477 L11.7646163,6.59746236 C12.0274189,6.3277763 12.0218388,5.89610897 11.7521527,5.6333064 C11.4824666,5.37050382 11.0507993,5.37608399 10.7879967,5.64577005 Z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+
+                                        <li>
+                                            <svg class="w-8 h-8 absolute top-8 right-0 lg:top-7 lg:right-3"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor">
+                                                <path fill="currentColor"
+                                                    d="M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M8.74858635,5.64577005 C8.48578378,5.37608399 8.05411645,5.37050382 7.78443039,5.6333064 C7.51474433,5.89610897 7.50916416,6.3277763 7.77196674,6.59746236 L7.77196674,6.59746236 L11.1738765,10.088477 L7.776618,13.5075477 C7.51120484,13.7746649 7.51258627,14.2063661 7.77970352,14.4717792 C8.04682076,14.7371924 8.47852194,14.735811 8.7439351,14.4686937 L8.7439351,14.4686937 L12.6140786,10.5737019 C12.8764703,10.3096256 12.8785407,9.88389868 12.6187299,9.61728273 L12.6187299,9.61728273 Z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col w-full lg:flex-row justify-between gap-6 mt-2 p-4">
+                            <article class="border rounded-md flex-1 relative">
+                                <div class="peer flex justify-between px-2 py-4 rounded-md ">
+                                    <div class="w-16">
+                                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                            alt="" class="w-full h-full object-cover border">
+                                    </div>
+                                    <div class="flex-1 px-2">
+                                        <div class="flex justify-between pt-3 pb-1">
+                                            <h3 class="font-medium text-gray-700 text-sm"> Compliment Appraisals</h3>
+                                            <span class="font-bold text-base">$00.0</span>
+                                        </div>
+
+                                        <p class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</p>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                    class="items-center absolute -right-2 -top-2 hidden peer-hover:block">
+                                    <svg class="w-6 h-6" version="1.2" baseProfile="tiny"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                                        </path>
+                                    </svg>
+
+                                </button>
+                            </article>
+
+                            <article class="border rounded-md flex-1 relative">
+                                <div class="peer flex justify-between px-2 py-4 rounded-md ">
+                                    <div class="w-16">
+                                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                            alt="" class="w-full h-full object-cover border">
+                                    </div>
+                                    <div class="flex-1 px-2">
+                                        <div class="flex justify-between pt-3 pb-1">
+                                            <h3 class="font-medium text-gray-700 text-sm"> Compliment
+                                                Appraisals</h3>
+
+                                            <span class="font-bold text-base">$00.0</span>
+                                        </div>
+
+                                        <p class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</p>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                    class="items-center absolute -right-2 -top-2 hidden peer-hover:block">
+                                    <svg class="w-6 h-6" version="1.2" baseProfile="tiny"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                                        </path>
+                                    </svg>
+
+                                </button>
+                            </article>
+                        </div>
+
+
+                    </li>
+                    <!-- first section ends  -->
+
+                    <!-- second section starts  -->
+                    <li class="flex flex-col container mx-auto lg:border mt-4">
+                        <div class="flex flex-col lg:flex-row container mx-auto">
+                            <div class="w-full  lg:w-2/5 px-2 py-2 container ">
+                                <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                                    alt="This is a Jewellery image containing diamond"
+                                    class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <div class="flex-1 container mx-auto px-2">
+                                <header class="w-full pb-4 relative space-y-4 pt-2">
+                                    <div class="flex justify-between items-start gap-4">
+                                        <h2
+                                            class="font-semibold text-base flex justify-between items-center text-gray-700">
+                                            Oval French Cut
+                                            Halo Engagement Set In 14K White Gold With A
+                                            1.00 Ct.
+                                            H-Color VS2-Clarity Emerald Cut Diamond</h2>
+
+                                        <button type="button" aria-label="cross-button-2" class="flex items-center">
+                                            <svg class="w-6 h-6" version="1.2" baseProfile="tiny"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                                                </path>
+                                            </svg>
+                                            <span class="hidden lg:block text-xs text-gray-600">Remove</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="space-y-2">
+                                        <p class="text-gray-600 font-medium text-sm">Item#RB1077-WG14</p>
+                                        <p class="font-bold text-xl">$1,258.78</p>
+                                    </div>
+
+                                </header>
+
+                                <div class="flex flex-col lg:flex-row gap-16 container sm:space-y-6 lg:space-y-0">
+                                    <div class="flex gap-6">
+                                        <div class="w-full lg:flex-1">
+                                            <label for="ring-size-2"
+                                                class="font-medium text-sm gap-y-4 text-gray-700">Ring Size</label>
+                                            <select name="size" id="ring-size-2" class="border w-full py-2">
+                                                <option selected class="font-medium text-sm">Select Size</option>
+                                                <option value="xs">XS</option>
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div class=" ">
+                                            <label for="quantity-2"
+                                                class="font-medium text-sm gap-y-4 text-gray-700">Quantity</label>
+
+                                            <div class="flex items-center gap-1 border">
+                                                <button class="text-3xl px-1">-</button>
+                                                <input type="number" name="qty" id="quantity-2" value="1"
+                                                    class=" w-6 h-5 text-xl">
+                                                <button class="text-2xl ">+</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <fieldset class="flex-1">
+                                        <legend class="font-medium text-sm gap-y-4 text-gray-700">Would you like to add
+                                            a center
+                                            Stone?
+                                        </legend>
+                                        <div class="flex gap-8 items-center py-2">
+                                            <div class="flex gap-2">
+                                                <input type="radio" name="radio-button-2" id="button-3" checked>
+                                                <label for="button-3" class="text-sm">Yes</label>
+                                            </div>
+                                            <div class="flex gap-2">
+                                                <input type="radio" name="radio-button-2" id="button-4">
+                                                <label for="button-4" class="text-sm">No</label>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+
+
+
+                                </div>
+
+                                <fieldset>
+                                    <div class="flex gap-6 items-center  pt-4">
+                                        <legend class="font-medium text-gray-700">Select Protection Plans</legend>
+                                        <svg class="w-4 h-4 text-blue-600" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-sm text-gray-700  pb-4">Enjoy peace of mind with a Care Plan from
+                                        Jewellers Mutual.</p>
+                                    <div class="flex flex-col max-w-xl lg:flex-row mb-2">
+                                        <div class="flex-1 border">
+                                            <input checked type="radio" name="default-radio-2" id="radio-4"
+                                                class="hidden peer opacity-0 text-blue-600 w-full bg-white border-gray-500">
+                                            <label for="radio-4"
+                                                class="flex flex-1 cursor-pointer px-4  py-2 w-full gap-4 bg-white items-center justify-center peer-checked:bg-blue-600 peer-checked:text-white text-sm font-medium text-gray-900">
+                                                <span><svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path d="M5 12l5 5l10 -10"></path>
+                                                    </svg></span><span>No Plan</span>
+                                            </label>
+
+                                        </div>
+
+
+                                        <div class="flex-1 border">
+                                            <input type="radio" name="default-radio-2" id="radio-5"
+                                                class="hidden peer opacity-0 text-blue-600 w-full bg-white border-gray-500">
+                                            <label for="radio-5"
+                                                class="flex flex-1 cursor-pointer px-4 py-2 w-full gap-4 bg-white items-center justify-center  peer-checked:bg-blue-600 peer-checked:text-white text-sm font-medium text-gray-900">
+                                                <span><svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path d="M5 12l5 5l10 -10"></path>
+                                                    </svg></span>
+                                                <span>3Years</span><span>$180.00</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="flex-1 border">
+                                            <input type="radio" name="default-radio-2" id="radio-6"
+                                                class="hidden peer opacity-0 text-blue-600 w-full bg-white border-gray-500">
+                                            <label for="radio-6"
+                                                class="flex flex-1 cursor-pointer px-4 py-2 w-full gap-4 bg-white items-center justify-center  peer-checked:bg-blue-600 peer-checked:text-white text-sm font-medium text-gray-900">
+                                                <span><svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path d="M5 12l5 5l10 -10"></path>
+                                                    </svg></span>
+                                                <span>Lifetime</span><span>$425.00</span>
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                </fieldset>
+
+                                <div class="flex gap-1 items-center mb-2">
+                                    <p class="peer font-semibold text-xs md:text-sm text-gray-700">Engraving: <span class="text-gray-600 font-normal">Script Lettering </span><span>"Ucodesoft"</span></p>
+                                    <button type="button" class="hidden peer-hover:block">
+                                            <svg class="w-6 h-6 " version="1.2" baseProfile="tiny"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                                                </path>
+                                            </svg>
+                                        
+                                    </button>
+                                </div>
+                                <div class="space-y-4 overflow-x-auto">
+                                    <h3 class="font-medium text-sm text-gray-700">Matching Items</h3>
+                                    <ul class="relative  flex flex-nowrap lg:flex flex-row  gap-3">
+                                        <li>
+                                            <svg class="absolute top-8 left-3 lg:top-7 w-8 h-8 "
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor">
+                                                <path fill="currentColor"
+                                                    d="M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M10.7879967,5.64577005 L6.91785319,9.61728273 C6.65804237,9.88389868 6.66011276,10.3096256 6.92250445,10.5737019 L10.792648,14.4686937 C11.0580611,14.735811 11.4897623,14.7371924 11.7568796,14.4717792 C12.0239968,14.2063661 12.0253782,13.7746649 11.7599651,13.5075477 L8.36270656,10.088477 L11.7646163,6.59746236 C12.0274189,6.3277763 12.0218388,5.89610897 11.7521527,5.6333064 C11.4824666,5.37050382 11.0507993,5.37608399 10.7879967,5.64577005 Z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+
+                                        <li class="w-1/3 shrink-0 lg:shrink">
+                                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                                alt="Diamond Jewellery" class="w-full h-full object-cover border">
+                                        </li>
+
+
+                                        <li>
+                                            <svg class="w-8 h-8 absolute top-8 right-0 lg:top-7 lg:right-3"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor">
+                                                <path fill="currentColor"
+                                                    d="M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M8.74858635,5.64577005 C8.48578378,5.37608399 8.05411645,5.37050382 7.78443039,5.6333064 C7.51474433,5.89610897 7.50916416,6.3277763 7.77196674,6.59746236 L7.77196674,6.59746236 L11.1738765,10.088477 L7.776618,13.5075477 C7.51120484,13.7746649 7.51258627,14.2063661 7.77970352,14.4717792 C8.04682076,14.7371924 8.47852194,14.735811 8.7439351,14.4686937 L8.7439351,14.4686937 L12.6140786,10.5737019 C12.8764703,10.3096256 12.8785407,9.88389868 12.6187299,9.61728273 L12.6187299,9.61728273 Z">
+                                                </path>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 w-full lg:grid-cols-2 justify-between gap-6 mt-2 p-4">
+                            <article class="border rounded-md flex-1 relative">
+                                <div class="peer flex justify-between px-2 py-4 rounded-md ">
+                                    <div class="w-16">
+                                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                            alt="" class="w-full h-full object-cover border">
+                                    </div>
+                                    <div class="flex-1 px-2">
+                                        <div class="flex justify-between pt-3 pb-1">
+                                            <h3 class="font-medium text-gray-700 text-sm"> Compliment
+                                                Appraisals</h3>
+                                            <span class="font-bold text-base">$00.0</span>
+                                        </div>
+
+                                        <p class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</p>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                    class="items-center absolute -right-2 -top-2 hidden peer-hover:block">
+                                    <svg class="w-6 h-6" version="1.2" baseProfile="tiny"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                                        </path>
+                                    </svg>
+
+                                </button>
+                            </article>
+
+                            <article class="border rounded-md flex-1 relative">
+                                <div class="peer flex justify-between px-2 py-4 rounded-md ">
+                                    <div class="w-16">
+                                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                            alt="" class="w-full h-full object-cover border">
+                                    </div>
+                                    <div class="flex-1 px-2">
+                                        <div class="flex justify-between pt-3 pb-1">
+                                            <h3 class="font-medium text-gray-700 text-sm"> Compliment
+                                                Appraisals</h3>
+
+                                            <span class="font-bold text-base">$00.0</span>
+                                        </div>
+
+                                        <p class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</p>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                    class="items-center absolute -right-2 -top-2 hidden peer-hover:block">
+                                    <svg class="w-6 h-6" version="1.2" baseProfile="tiny"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                                        </path>
+                                    </svg>
+
+                                </button>
+                            </article>
+                            <!-- 3rd articl  -->
+                            <article class="border rounded-md flex-1 relative">
+                                <div class="peer flex justify-between px-2 py-4 rounded-md ">
+                                    <div class="w-16">
+                                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                            alt="" class="w-full h-full object-cover border">
+                                    </div>
+                                    <div class="flex-1 px-2">
+                                        <div class="flex justify-between pt-3 pb-1">
+                                            <h3 class="font-medium text-gray-700 text-sm">3 Year care Plan For
+                                                D-54099913...Protection(Life time)</h3>
+
+                                            <span class="font-bold text-base">$00.0</span>
+                                        </div>
+
+                                        <p class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</p>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                    class="items-center absolute -right-2 -top-2 hidden peer-hover:block">
+                                    <svg class="w-6 h-6" version="1.2" baseProfile="tiny"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                                        </path>
+                                    </svg>
+
+                                </button>
+                            </article>
+
+                        </div>
+
+
+                    </li>
+                    <!-- Third section starts  -->
+                    <div class="flex flex-col lg:flex-row border gap-6 rounded-md container mt-4">
+
+                        <div class="flex-1  p-4 container">
+                            <div class="">
+                                <label for="instructions" class="block  font-semibold text-lg mb-2">Special
+                                    Instruction</label>
+                                <textarea id="instructions" rows="4"
+                                    class="block p-2.5 w-full text-sm px-4 bg-gray-50 rounded-lg border border-gray-300 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab explicabo aliquam itaque illo labore nemo magnam suscipit, eligendi nam porro corporis sapiente soluta cumque optio saepe hic autem rerum tempore.</textarea>
+
+                            </div>
+
+                            <div class="pt-5">
+                                <h3 class="font-bold text-base pt-1">Shipping</h3>
+                                <dl class="flex flex-col lg:flex-row  gap-4 justify-between py-6 space-y-2">
+                                    <div class="pb-2 space-y-2">
+                                        <dt class="text-sm text-gray-700">Estimated Shipping Date</dt>
+                                        <dd class="text-sm font-bold"><time datetime="2023-08-11">Friday,August
+                                                11,2023</time></dd>
+                                    </div>
+
+                                    <div class="space-y-2">
+                                        <dt class="text-sm text-gray-700">Shipping Method</dt>
+                                        <dd class="text-sm font-bold">Free FeedEx Overnigh</dd>
+                                    </div>
+                                </dl>
+
+                            </div>
+                            <div class="border rounded-md bg-gray-200 container px-4 py-6">
+                                <p class="pb-4 text-xs">For Saturday delivery , call customer service at <span
+                                        class="font-semibold">877-627-5094</span>APO/FPO orders will
+                                    ship via USPS Priority Mail.</p>
+                                <div class="flex flex-col justify-between gap-4 lg:flex-row">
+                                    <span class="text-xs">View our <a href="#"
+                                            class="text-blue-800 font-medium inline-block">Shipping Policy and Expedite
+                                            Options</a></span>
+                                    <span class="text-xs">For phone orders please mention: <span
+                                            class="font-semibold">QFPHUG3</span> </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 container">
+                            <div class="flex flex-col pt-2 px-4 space-y-6">
+                                <dl class="pb-8">
+                                    <div class="flex justify-between border-b pb-4 pt-4">
+                                        <dt class="text-sm text-gray-700">Subtotal</dt>
+                                        <dd class="font-semibold">$5364.8</dd>
+                                    </div>
+
+                                    <div class="flex justify-between border-b pb-4 pt-4">
+                                        <dt class="text-sm text-gray-700">Shipping</dt>
+                                        <dd class="font-semibold">Free</dd>
+                                    </div>
+
+                                    <div class="flex justify-between  pb-4 pt-4">
+                                        <dt class="text-sm text-gray-700">Total Payable</dt>
+                                        <dd class="font-semibold">$5364.8</dd>
+                                    </div>
+                                </dl>
+                                <label for="coupon" class="text-sm text-gray-700">Coupon code</label>
+                                <div class="relative">
+                                    <input type="text" id="coupon"
+                                        class="py-3 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5  dark:border-gray-600"
+                                        placeholder="Enter Code">
+                                    <button
+                                        class="text-blue-800 absolute top-2 right-1 cursor-pointer px-2">Apply</button>
+
+                                </div>
+
+                                <button
+                                    class=" block rounded-md bg-blue-800 text-lg text-white px-4 py-2  mt-8 w-full">Continue</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </form>
+
+            <!-- fourth section starts -->
+            <section class="container border-b rounded-md mt-4">
+                <h3 class="font-semibold text-center pt-4">Payment Choices with Flexibility</h3>
+
+                <ul class="grid grid-cols-2 lg:grid-cols-6 gap-6  px-8 py-8 items-center">
+                    <li class="flex flex-col justify-between items-center gap-4">
+                        <figure class="flex-1 space-y-4">
+                            <div class="h-20 w-28">
+                                <img src="/images/card.png" alt="payment through debit/Credit card" class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <figcaption class="text-xs text-center text-gray-700">Debit Card or Credit Card</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="flex flex-col justify-between items-center gap-4">
+                        <figure class="flex-1 space-y-4">
+                            <div class="h-20 w-32">
+                                <img src="/images/paypal.png" alt="payment through paypal" class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <figcaption class="text-xs text-center text-gray-700">Paypal</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="flex flex-col justify-between items-center gap-4">
+                        <figure class="flex-1 space-y-4">
+                            <div class="h-20 w-32">
+                                <img src="/images/splitpay.png" alt="payment through split pay" class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <figcaption class="text-xs text-center text-gray-700">Split Pay</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="flex flex-col justify-between items-center gap-4">
+                        <figure class="flex-1 space-y-4">
+                            <div class="h-20 w-32">
+                                <img src="/images/affirm.png" alt="payment with finance through affirm" class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <figcaption class="text-xs text-center text-gray-700">Financing with affirm</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="flex flex-col justify-between items-center gap-4">
+                        <figure class="flex-1 space-y-4">
+                            <div class="h-24 w-28">
+                                <img src="/images/wiretransfr.png" alt="payment through wire transfer" class="w-full h-full object-cover rounded-md">
+                            </div>
+                                <figcaption class="text-xs text-center text-gray-700">Wire Transfer</figcaption>
+                        </figure>
+
+                    </li>
+
+                    <li class="flex flex-col justify-between items-center gap-4">
+                        <figure class="flex-1 space-y-3">
+                            <div class="h-20 w-20">
+                                <img src="/images/phone.png" alt="payment through phone" class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <figcaption class="text-xs text-center text-gray-700">Pay by Phone</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+
+            </section>
+            <!-- fourth section ends  -->
+
+            <!-- fifth section starts -->
+            <article class="bg-slate-50 container mx-auto">
+
+                <div class="px-8 space-y-2 pt-6 container">
+                    <h4 class="font-semibold text-base">Keep Your Jewellery sparkling and Safe.</h4>
+                    <p class="text-xs mb-4 text-gray-700">Adiamore offers care plans and cleaners to offer you peace of
+                        mind when making your purchase</p>
+                    <div class="flex flex-col lg:flex-row justify-between pt-4 space-y-3 pb-4">
+                        <a href="#" class="bg-blue-600 text-white p-2 text-sm">Purchase A Care Plan</a>
+                        <a href="#" class="underline text-blue-700 ">Explore All</a>
+                    </div>
+                </div>
+
+                <ul class="grid grid-cols-2 gap-3 lg:grid-cols-6 container">
+                    <li class="text-center p-4 pb-2 space-y-2">
+                        <figure class="">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                                alt="diamond-jewellary" class="w-full h-full object-cover border">
+                            <figcaption class="text-center text-xs pt-4">Foaming Cleaner</figcaption>
+                        </figure>
+                        <p class="pb-2 font-bold">$12</p>
+                        <button type="submit"
+                            class="border-2 rounded-md text-sm border-blue-600 text-blue-800 px-8 py-2">Add to
+                            Cart</button>
+                    </li>
+
+                    <li class="text-center p-4 pb-2 space-y-2">
+                        <figure class="">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                                alt="diamond-jewellary" class="w-full h-full object-cover border">
+                            <figcaption class="text-center text-xs pt-4">Foaming Cleaner</figcaption>
+                        </figure>
+                        <p class="pb-2 font-bold">$12</p>
+                        <button type="submit"
+                            class="border-2 rounded-md text-sm border-blue-600 text-blue-800 px-8 py-2">Add to
+                            Cart</button>
+                    </li>
+
+                    <li class="text-center p-4 pb-2 space-y-2">
+                        <figure class="">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                                alt="diamond-jewellary" class="w-full h-full object-cover border">
+                            <figcaption class="text-center text-xs pt-4">Foaming Cleaner</figcaption>
+                        </figure>
+                        <p class="pb-2 font-bold">$12</p>
+                        <button type="submit"
+                            class="border-2 rounded-md text-sm border-blue-600 text-blue-800 px-8 py-2">Add to
+                            Cart</button>
+                    </li>
+
+                    <li class="text-center p-4 pb-2 space-y-2">
+                        <figure class="">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                                alt="diamond-jewellary" class="w-full h-full object-cover border">
+                            <figcaption class="text-center text-xs pt-4">Foaming Cleaner</figcaption>
+                        </figure>
+                        <p class="pb-2 font-bold">$12</p>
+                        <button type="submit"
+                            class="border-2 rounded-md text-sm border-blue-600 text-blue-800 px-8 py-2">Add to
+                            Cart</button>
+                    </li>
+
+                    <li class="text-center p-4 pb-2 space-y-2">
+                        <figure class="">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                                alt="diamond-jewellary" class="w-full h-full object-cover border">
+                            <figcaption class="text-center text-xs pt-4">Foaming Cleaner</figcaption>
+                        </figure>
+                        <p class="pb-2 font-bold">$12</p>
+                        <button type="submit"
+                            class="border-2 rounded-md text-sm border-blue-600 text-blue-800 px-8 py-2">Add to
+                            Cart</button>
+                    </li>
+
+                    <li class="text-center p-4 pb-2 space-y-2">
+                        <figure class="">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                                alt="diamond-jewellary" class="w-full h-full object-cover border">
+                            <figcaption class="text-center text-xs pt-4">Foaming Cleaner</figcaption>
+                        </figure>
+                        <p class="pb-2 font-bold">$12</p>
+                        <button type="submit"
+                            class="border-2 rounded-md text-sm border-blue-600 text-blue-800 px-8 py-2">Add to
+                            Cart</button>
+                    </li>
+
+                </ul>
+
+
+
+
+            </article>
+            <!-- fifth section ends  -->
+
+        </div>
+    </main>
+</body>
+
+</html>
