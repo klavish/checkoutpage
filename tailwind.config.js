@@ -21,6 +21,11 @@ module.exports = {
         '2xl': '1436px',
         // => @media (min-width: 1536px) { ... }
       },
+
+      fontFamily: {
+        'jost': ['jost'],
+      },
+      
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">y
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,38 +13,51 @@
 
 <body class="font-jost">
     <!-- header starts  -->
-    <header class="w-full h-20 border flex items-center justify-center py-12 fixed top-0 z-10 bg-slate-50">
-        <nav class="flex gap-24">
-            <div class="flex flex-col items-center justify-center space-y-4">
-                <span class="xs:hidden lg:block text-blue-800 font-bold">Summary</span>
-                <div
-                    class="w-5 h-5 relative bg-white border-2 border-sky-600 rounded-full grid place-items-center after:content-[' '] after:absolute xs:after:w-28 lg:after:w-48 after:h-1 after:-z-10 after:border-b after:border-sky-600 after:left-2 after:top-1">
-                    <div class="w-2 h-2 bg-sky-600 rounded-full absolute"></div>
-                </div>
+    <header class="w-full border flex items-center justify-center pt-12 pb-6 fixed top-0 z-10 bg-slate-50">
+        <nav class="">
+            <div class="relative w-full border-b border-dashed border-gray-500 translate-y-2.5">
+                <div class="absolute inset-y-0 w-[33%] bg-blue-600 h-0.5"></div>
             </div>
-            <div class="flex flex-col items-center justify-center space-y-4 relative">
-                <span class="xs:hidden lg:block text-gray-700 font-medium">Contact Information</span>
-                <div
-                    class="w-5 h-5 relative bg-white border-2 rounded-full grid place-items-center after:content-[' '] after:absolute after:w-60 after:h-1 after:-z-10 after:border-b after:border-dashed after:border-slate-200 after:left-2 after:top-1">
-                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center justify-center space-y-4">
-                <span class="xs:hidden lg:block text-gray-700 font-medium">Payment Information</span>
-                <div
-                    class="w-5 h-5 relative bg-white border-2  rounded-full grid place-items-center after:content-[' '] after:absolute sm:after:w-28 lg:after:w-48 after:h-1 after:-z-10 after:border-b after:border-dashed after:border-slate-200 after:left-2 after:top-1">
-                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center justify-center space-y-4 ">
-                <span class="xs:hidden lg:block text-gray-700 font-medium">Review</span>
-                <div class="w-5 h-5 relative bg-white border-2  rounded-full grid place-items-center ">
-                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
-                </div>
-            </div>
+            <ul class="flex items-center justify-center gap-12 md:gap-32 lg:gap-64">
+                <li >
+                    <a href="#" aria-label="progress" class="flex items-center justify-center relative" >
+                        <span class="xs:hidden lg:block absolute -top-10 text-blue-700 font-semibold whitespace-nowrap">Summary</span>
+                    <div class="w-5 h-5 relative bg-white border-2  border-sky-600 rounded-full flex items-center justify-center ">
+                        <div class="w-2 h-2 bg-sky-600 rounded-full"></div>
+                    </div>
+                    </a>
+                </li>
+                <li >
+                    <a href="#" aria-label="progress" class="flex items-center justify-center relative" >
+                        <span class="xs:hidden lg:block absolute -top-10 text-gray-700 font-medium whitespace-nowrap">Contact Information</span>
+                    <div class="w-5 h-5 relative bg-white border-2 border-gray-500 rounded-full flex items-center justify-center ">
+                        <div class="w-2 h-2 bg-gray-100 rounded-full"></div>
+                    </div>
+                    </a>
+                </li>
+                <li >
+                    <a href="#" aria-label="progress" class="flex items-center justify-center relative" >
+                        <span class="xs:hidden lg:block absolute -top-10 text-gray-700 font-medium whitespace-nowrap">Payment Information</span>
+                    <div class="w-5 h-5 relative bg-white border-2  border-gray-500 rounded-full flex items-center justify-center ">
+                        <div class="w-2 h-2 bg-gray-100 rounded-full"></div>
+                    </div>
+                    </a>
+                </li>
+                <li >
+                    <a href="#" aria-label="progress" class="flex items-center justify-center relative" >
+                        <span class="xs:hidden lg:block absolute -top-10 text-gray-700 font-medium whitespace-nowrap">Review</span>
+                    <div class="w-5 h-5 relative bg-white border-2 border-gray-500  rounded-full flex items-center justify-center ">
+                        <div class="w-2 h-2 bg-gray-100 rounded-full"></div>
+                    </div>
+                    </a>
+                </li>
+                
+            </ul>
+          
         </nav>
 
     </header>
+
     <main>
         <div class="w-full mt-28">
             <form action="#" class="container justify-around mx-auto">
@@ -104,10 +117,10 @@
                                             <label for="quantity"
                                                 class="font-semibold text-sm gap-y-4 text-gray-700">Quantity</label>
 
-                                            <div class="flex items-center gap-1 border">
+                                            <div class="flex items-center gap-1 border px-2">
                                                 <button class="text-3xl px-1">-</button>
                                                 <input type="number" name="qty" id="quantity" value="1"
-                                                    class=" w-6 h-5 text-xl">
+                                                    class=" w-6 h-5 text-lg pt-1 pl-1">
                                                 <button class="text-2xl ">+</button>
                                             </div>
 
@@ -148,7 +161,7 @@
                                                 </path>
                                             </svg>
                                         </div>
-                                        <p class="text-xs md:text-sm text-gray-700  pb-4">Enjoy peace of mind with a
+                                        <p class="text-xs md:text-sm text-gray-700  pb-4 whitespace-nowrap">Enjoy peace of mind with a
                                             Care Plan from
                                             Jewellers Mutual.</p>
                                     </div>
@@ -366,7 +379,7 @@
                                             1.00 Ct.
                                             H-Color VS2-Clarity Emerald Cut Diamond</h2>
 
-                                        <button type="button" aria-label="cross-button-2" class="flex items-center">
+                                        <button type="button" aria-label="cross-button" class="flex items-center">
                                             <svg class="w-6 h-6" version="1.2" baseProfile="tiny"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                                 fill="currentColor">
@@ -403,10 +416,10 @@
                                             <label for="quantity-2"
                                                 class="font-semibold text-sm gap-y-4 text-gray-700">Quantity</label>
 
-                                            <div class="flex items-center gap-1 border">
+                                            <div class="flex items-center gap-1 border px-2">
                                                 <button class="text-3xl px-1">-</button>
                                                 <input type="number" name="qty" id="quantity-2" value="1"
-                                                    class=" w-6 h-5 text-xl">
+                                                    class=" w-6 h-5 text-lg pt-1 pl-1">
                                                 <button class="text-2xl ">+</button>
                                             </div>
 
@@ -437,7 +450,7 @@
                                 </div>
 
                                 <fieldset>
-                                    <div class="flex gap-4 items-center  pt-4">
+                                    <div class="flex gap-6 items-center  pt-4">
                                         <legend class="font-semibold text-gray-700">Select Protection Plans</legend>
                                         <svg class="w-4 h-4 text-blue-600" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20" fill="currentColor">
@@ -446,7 +459,7 @@
                                             </path>
                                         </svg>
                                     </div>
-                                    <p class="text-sm text-gray-700  pb-4">Enjoy peace of mind with a Care Plan from
+                                    <p class="text-xs md:text-sm text-gray-700  pb-4 whitespace-nowrap">Enjoy peace of mind with a Care Plan from
                                         Jewellers Mutual.</p>
                                     <div class="flex flex-col max-w-xl lg:flex-row mb-2">
                                         <div class="flex-1 border">
@@ -679,81 +692,82 @@
                     </li>
                     <!-- Third section starts  -->
                     <li>
-                    <div class="flex flex-col lg:flex-row border gap-6 rounded-md container mt-4">
+                        <div class="flex flex-col lg:flex-row border gap-6 rounded-md container mt-4">
 
-                        <div class="flex-1  p-4 container">
-                            <div class="">
-                                <label for="instructions" class="block  font-semibold text-lg mb-2">Special
-                                    Instruction</label>
-                                <textarea id="instructions" rows="4"
-                                    class="block p-2.5 w-full text-sm px-4 bg-gray-50 rounded-lg border border-gray-300 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab explicabo aliquam itaque illo labore nemo magnam suscipit, eligendi nam porro corporis sapiente soluta cumque optio saepe hic autem rerum tempore.</textarea>
+                            <div class="flex-1  p-4 container">
+                                <div class="">
+                                    <label for="instructions" class="block  font-semibold text-lg mb-2">Special
+                                        Instruction</label>
+                                    <textarea id="instructions" rows="4"
+                                        class="resize-none block p-2.5 w-full text-sm px-4 bg-gray-50 rounded-lg border border-gray-300 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab explicabo aliquam itaque illo labore nemo magnam suscipit, eligendi nam porro corporis sapiente soluta cumque optio saepe hic autem rerum tempore.</textarea>
 
-                            </div>
+                                </div>
 
-                            <div class="pt-5">
-                                <h3 class="font-bold text-base pt-1">Shipping</h3>
-                                <dl class="flex flex-col lg:flex-row  gap-4 justify-between py-6 space-y-2">
-                                    <div class="pb-2 space-y-2">
-                                        <dt class="text-sm text-gray-700">Estimated Shipping Date</dt>
-                                        <dd class="text-sm font-bold"><time datetime="2023-08-11">Friday,August
-                                                11,2023</time></dd>
+                                <div class="pt-5">
+                                    <h3 class="font-bold text-base pt-1">Shipping</h3>
+                                    <dl class="flex flex-col lg:flex-row  gap-4 justify-between py-6 space-y-2">
+                                        <div class="pb-2 space-y-2">
+                                            <dt class="text-sm text-gray-700">Estimated Shipping Date</dt>
+                                            <dd class="text-sm font-bold"><time datetime="2023-08-11">Friday,August
+                                                    11,2023</time></dd>
+                                        </div>
+
+                                        <div class="space-y-2">
+                                            <dt class="text-sm text-gray-700">Shipping Method</dt>
+                                            <dd class="text-sm font-bold">Free FeedEx Overnigh</dd>
+                                        </div>
+                                    </dl>
+
+                                </div>
+                                <div class="border rounded-md bg-gray-200 container px-4 py-6">
+                                    <p class="pb-4 text-xs">For Saturday delivery , call customer service at <span
+                                            class="font-semibold">877-627-5094</span>APO/FPO orders will
+                                        ship via USPS Priority Mail.</p>
+                                    <div class="flex flex-col justify-between gap-4 lg:flex-row">
+                                        <span class="text-xs">View our <a href="#"
+                                                class="text-blue-800 font-medium inline-block underline">Shipping Policy
+                                                and Expedite
+                                                Options</a></span>
+                                        <span class="text-xs">For phone orders please mention: <span
+                                                class="font-semibold">QFPHUG3</span> </span>
                                     </div>
-
-                                    <div class="space-y-2">
-                                        <dt class="text-sm text-gray-700">Shipping Method</dt>
-                                        <dd class="text-sm font-bold">Free FeedEx Overnigh</dd>
-                                    </div>
-                                </dl>
-
-                            </div>
-                            <div class="border rounded-md bg-gray-200 container px-4 py-6">
-                                <p class="pb-4 text-xs">For Saturday delivery , call customer service at <span
-                                        class="font-semibold">877-627-5094</span>APO/FPO orders will
-                                    ship via USPS Priority Mail.</p>
-                                <div class="flex flex-col justify-between gap-4 lg:flex-row">
-                                    <span class="text-xs">View our <a href="#"
-                                            class="text-blue-800 font-medium inline-block">Shipping Policy and Expedite
-                                            Options</a></span>
-                                    <span class="text-xs">For phone orders please mention: <span
-                                            class="font-semibold">QFPHUG3</span> </span>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="flex-1 container">
-                            <div class="flex flex-col pt-2 px-4 space-y-6">
-                                <dl class="pb-8">
-                                    <div class="flex justify-between border-b pb-4 pt-4">
-                                        <dt class="text-sm text-gray-700">Subtotal</dt>
-                                        <dd class="font-semibold">$5364.8</dd>
+                            <div class="flex-1 container">
+                                <div class="flex flex-col pt-2 px-4 space-y-6">
+                                    <dl class="pb-8">
+                                        <div class="flex justify-between border-b pb-4 pt-4">
+                                            <dt class="text-sm text-gray-700">Subtotal</dt>
+                                            <dd class="font-semibold">$5364.8</dd>
+                                        </div>
+
+                                        <div class="flex justify-between border-b pb-4 pt-4">
+                                            <dt class="text-sm text-gray-700">Shipping</dt>
+                                            <dd class="font-semibold">Free</dd>
+                                        </div>
+
+                                        <div class="flex justify-between  pb-4 pt-4">
+                                            <dt class="text-sm text-gray-700">Total Payable</dt>
+                                            <dd class="font-semibold">$5364.8</dd>
+                                        </div>
+                                    </dl>
+                                    <label for="coupon" class="text-sm text-gray-700">Coupon code</label>
+                                    <div class="relative">
+                                        <input type="text" id="coupon"
+                                            class="py-3 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5  dark:border-gray-600"
+                                            placeholder="Enter Code">
+                                        <button
+                                            class="text-blue-800 absolute top-2 right-1 cursor-pointer px-2">Apply</button>
+
                                     </div>
 
-                                    <div class="flex justify-between border-b pb-4 pt-4">
-                                        <dt class="text-sm text-gray-700">Shipping</dt>
-                                        <dd class="font-semibold">Free</dd>
-                                    </div>
-
-                                    <div class="flex justify-between  pb-4 pt-4">
-                                        <dt class="text-sm text-gray-700">Total Payable</dt>
-                                        <dd class="font-semibold">$5364.8</dd>
-                                    </div>
-                                </dl>
-                                <label for="coupon" class="text-sm text-gray-700">Coupon code</label>
-                                <div class="relative">
-                                    <input type="text" id="coupon"
-                                        class="py-3 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5  dark:border-gray-600"
-                                        placeholder="Enter Code">
                                     <button
-                                        class="text-blue-800 absolute top-2 right-1 cursor-pointer px-2">Apply</button>
+                                        class=" block rounded-md bg-blue-800 text-lg text-white px-4 py-2  mt-8 w-full">Continue</button>
 
                                 </div>
-
-                                <button
-                                    class=" block rounded-md bg-blue-800 text-lg text-white px-4 py-2  mt-8 w-full">Continue</button>
-
                             </div>
                         </div>
-                    </div>
                     </li>
                 </ul>
             </form>
@@ -933,13 +947,15 @@
 
             <!-- Modal  -->
 
-            <div class="fixed top-2 flex pb-2 bg-black/60 w-full h-full z-10">
+            <div class=" flex pb-2 bg-black/60 w-full h-full z-10">
 
                 <div
-                    class="z-30 space-y-2 h-full w-full flex flex-col items-center justify-center inset-0  bg-opacity-100 text-white">
-                    <div class="max-w-lg border-2 border-gray-500 space-y-2 text-center py-3 px-2 text-black bg-white relative">
+                    class="container mx-auto z-30 space-y-2 h-full w-full flex flex-col items-center justify-center inset-0  bg-opacity-100 text-white">
+                    <div
+                        class="max-w-lg border-2 border-gray-500 space-y-2 text-center py-3 px-2 text-black bg-white relative">
                         <h2 class="text-lg font-bold">ENGRAVE YOUR RING </h2>
-                        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur nesciunt velit
+                        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                            aspernatur nesciunt velit
                             incidunt. Placeat consequatur optio dolorem nihil tenetur officiis? Laudantium esse
                             praesentium maiores saepe explicabo ad perferendis accusantium qui.
                         </p>
